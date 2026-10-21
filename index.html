@@ -47,34 +47,20 @@
         <h1 class="sitename">Raja Aruna Vistara</h1>
       </a>
 
-      <nav id="navmenu" class="navmenu">
+      <nav id="navmenu" class="navmenu" aria-label="Navigasi utama">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="#about-2">Dewan Komisaris</a></li>
-          <li><a href="#tabs">About Us</a></li>
-          <!-- <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="blog.html">Blog</a></li> -->
-          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a> -->
-            <!-- <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul> -->
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">Tentang Kami</a></li>
+          <li><a href="#komisaris">Dewan Komisaris</a></li>
+          <li><a href="#direksi">Direksi</a></li>
+        </ul>
+
+        <button
+          type="button"
+          class="mobile-nav-toggle d-xl-none bi bi-list"
+          aria-label="Buka navigasi"
+          aria-expanded="false">
+        </button>
       </nav>
 
     </div>
@@ -82,12 +68,12 @@
 
   <main class="main">
 
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <div class="container">
-        <div class="row align-items-center justify-content-between">
-          <div class="col-lg-6 mb-0 mb-lg-0 order-lg-2" data-aos="fade-up" data-aos-delay="400">
+  <!-- About Section -->
+  <section id="about" class="about section about-vision">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 order-lg-2" data-aos="fade-up" data-aos-delay="200">
+          <div class="about-slider">
             <div class="swiper init-swiper">
               <script type="application/json" class="swiper-config">
                 {
@@ -96,168 +82,193 @@
                   "autoplay": {
                     "delay": 5000
                   },
-                  "slidesPerView": "auto",
+                  "slidesPerView": 1,
                   "pagination": {
-                    "el": ".swiper-pagination",
+                    "el": "#about .swiper-pagination",
                     "type": "bullets",
                     "clickable": true
-                  },
-                  "breakpoints": {
-                    "320": {
-                      "slidesPerView": 1,
-                      "spaceBetween": 40
-                    },
-                    "1200": {
-                      "slidesPerView": 1,
-                      "spaceBetween": 1
-                    }
                   }
                 }
               </script>
-              <div class="swiper-wrapper" >
+
+              <div class="swiper-wrapper">
                 <div class="swiper-slide custom-slide">
-                  <img src="assets/img/LogoRajaAruna.jpeg" alt="Image" class="img-fluid slide-img">
+                  <img src="assets/img/LogoRajaAruna.jpeg" alt="Raja Aruna Vistara" class="img-fluid slide-img">
                 </div>
                 <div class="swiper-slide custom-slide">
-                  <img src="assets/img/Instagram/2.jpeg" alt="Image" class="img-fluid slide-img">
+                  <img src="assets/img/Instagram/3.jpeg" alt="Kegiatan Raja Aruna Vistara" class="img-fluid slide-img">
                 </div>
                 <div class="swiper-slide custom-slide">
-                  <img src="assets/img/Instagram/3.jpeg" alt="Image" class="img-fluid slide-img">
+                  <img src="assets/img/Instagram/4.jpeg" alt="Kegiatan Raja Aruna Vistara" class="img-fluid slide-img">
                 </div>
                 <div class="swiper-slide custom-slide">
-                  <img src="assets/img/Instagram/4.jpeg" alt="Image" class="img-fluid slide-img">
+                  <img src="assets/img/Instagram/5.jpeg" alt="Kegiatan Raja Aruna Vistara" class="img-fluid slide-img">
                 </div>
                 <div class="swiper-slide custom-slide">
-                  <img src="assets/img/Instagram/5.jpeg" alt="Image" class="img-fluid slide-img">
+                  <img src="assets/img/Instagram/6.jpeg" alt="Kegiatan Raja Aruna Vistara" class="img-fluid slide-img">
                 </div>
                 <div class="swiper-slide custom-slide">
-                  <img src="assets/img/Instagram/6.jpeg" alt="Image" class="img-fluid slide-img">
-                </div>
-                <div class="swiper-slide custom-slide">
-                  <img src="assets/img/Instagram/15.jpeg" alt="Image" class="img-fluid slide-img">
+                  <img src="assets/img/Instagram/15.jpeg" alt="Kegiatan Raja Aruna Vistara" class="img-fluid slide-img">
                 </div>
               </div>
+
               <div class="swiper-pagination"></div>
             </div>
+            <span class="about-slider-caption">Strategi · Kolaborasi · Pertumbuhan</span>
           </div>
+        </div>
 
-          <div class="col-lg-5 order-lg-0">
-            <h2 class="mb-2" data-aos="fade-up">
-              Visi
-            </h2>
-            <p class="mb-4" data-aos="fade-up">
-              Menjadi mitra bisnis modern dan terpercaya yang menciptakan nilai berkelanjutan melalui strategi, koneksi, dan pertumbuhan.
-            </p>
-            <h1 class="mb-2" data-aos="fade-up">
-              Misi
-            </h1>
-            <p data-aos="fade-up">
-              1. Memberikan advisory strategis dan dukungan pengambilan keputusan yang terstruktur bagi klien
-            </p>
-            <p data-aos="fade-up">
-              2. Menghubungkan peluang dengan kapabilitas dan mitra yang tepat melalui jejaring bisnis yang profesional.
-            </p>
-            <p data-aos="fade-up">
-              3. Mengembangkan peluang usaha dan kemitraan strategis yang memiliki nilai komersial jangka panjang.
-            </p>
-            <p data-aos="fade-up">
-              4. Memfasilitasi proses bisnis dan komersial secara terstruktur, terdokumentasi, dan akuntabel.
-            </p>
-            <p data-aos="fade-up">
-              5. Membangun hubungan bisnis berkelanjutan yang mampu berkembang melampaui satu transaksi.
-            </p>
-            <p data-aos="fade-up">
-              6. Menjalankan setiap kegiatan usaha dengan tata kelola yang profesional, bertanggung jawab, dan berintegritas.
-            </p>
-            <!-- <p class="mt-5" data-aos="fade-up">
-              <a href="https://wa.me/+6281262210154" target="_blank" rel="noopener noreferrer" class="btn btn-get-started">Hubungi Kami</a>
-            </p> -->
+        <div class="col-lg-6 order-lg-1" data-aos="fade-up">
+          <div class="about-copy-card">
+            <span class="about-eyebrow">Mengenal Kami</span>
+
+            <div class="vision-block">
+            <div>
+              <h2>Visi</h2>
+              <p>
+                Menjadi mitra bisnis modern dan terpercaya yang menciptakan nilai
+                berkelanjutan melalui strategi, koneksi, dan pertumbuhan.
+              </p>
+            </div>
+            </div>
+
+            <div class="mission-heading">
+              <h2>Misi</h2>
+            </div>
+
+            <ol class="mission-list">
+              <li>Memberikan advisory strategis dan dukungan pengambilan keputusan yang terstruktur bagi klien.</li>
+              <li>Menghubungkan peluang dengan kapabilitas dan mitra yang tepat melalui jejaring bisnis profesional.</li>
+              <li>Mengembangkan peluang usaha dan kemitraan strategis bernilai komersial jangka panjang.</li>
+              <li>Memfasilitasi proses bisnis secara terstruktur, terdokumentasi, dan akuntabel.</li>
+              <li>Membangun hubungan bisnis berkelanjutan yang berkembang melampaui satu transaksi.</li>
+              <li>Menjalankan kegiatan usaha dengan tata kelola profesional, bertanggung jawab, dan berintegritas.</li>
+            </ol>
           </div>
         </div>
       </div>
-    </section><!-- /About Section -->
+    </div>
+  </section>
 
-    <!-- Komisaris utama -->
-    <section id="about-2" class="about-2 section green-background">
-
-      <div class="container">
-        <div class="content">
-          <div class="row justify-content-center">
-            <div class="col-md-5 col-lg-4 col-xl-4 order-lg-1 offset-xl-1 mb-4">
-              <div class="img-wrap text-center text-md-left" data-aos="fade-up" data-aos-delay="100">
-                <div class="img">
-                  <img src="assets/img/damara.jpeg" alt="circle image" class="img-fluid">
-                </div>
-              </div>
-            </div>
-            <div class="offset-md-1 offset-lg-1 col-sm-12 col-md-5 col-lg-1 col-xl-4 mb-4" data-aos="fade-up">
-              <div class="px-3">
-                <h2 class="content-title text-start">Komisaris utama</h2>
-                <h3 class="content-subtitle">Damara Seplyan Sirya</h3>
-                <span class="content-subtitle">Hadir sebagai penjembatan yang menghubungkan peluang, memperkuat kolaborasi dan menciptakan pertubuhan berkelanjutan bagi para mitra kami di berbagai sektor.</span>
-                <span class="content-subtitle">Berbasis pada analisis mendalam, jaringan yang luas dan solusi yang tepat sasaran.</span>
-                <span class="content-subtitle">Berkomitment untuk mendukung pertumbuhan berkelanjutan bagi bisnis, institusi dan masyarakan.</span>
-                <span class="content-subtitle">Berpegang pada nilai Integritas Profesionalisme, kolaborasi dan dampak jangka panjang.</span>
-              </div>
+  <!-- Komisaris Utama -->
+  <section id="about-2" class="about-2 section green-background">
+    <div class="container">
+      <div class="content">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-5">
+            <div class="img-wrap" data-aos="fade-up" data-aos-delay="100">
+              <img
+                src="assets/img/damara.jpeg"
+                alt="Damara Seplyan Sirya, Komisaris Utama"
+                class="img-fluid profile-image">
             </div>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Komisaris -->
-    <section id="about-3" class="about-2 section green-background">
-      <div class="container">
-        <div class="content">
-          <div class="row justify-content-center">
-            <div class="col-md-5 col-lg-4 col-xl-4 order-lg-1 offset-xl-1 mb-4">
-              <div class="img-wrap text-center text-md-left" data-aos="fade-up" data-aos-delay="100">
-                <div class="img">
-                  <img src="assets/img/maja.jpeg" alt="circle image" class="img-fluid">
-                </div>
-              </div>
-            </div>
-            <div class="offset-md-1 offset-lg-1 col-sm-12 col-md-5 col-lg-1 col-xl-4 mb-4" data-aos="fade-up">
-              <div class="px-3">
-                <h2 class="content-title text-start">Komisaris</h2>
-                <h3 class="content-subtitle">Maja Permata Sora</h3>
-                <span class="content-subtitle">Hadir sebagai penjembatan yang menghubungkan peluang, memperkuat kolaborasi dan menciptakan pertubuhan berkelanjutan bagi para mitra kami di berbagai sektor.</span>
-                <span class="content-subtitle">Berbasis pada analisis mendalam, jaringan yang luas dan solusi yang tepat sasaran.</span>
-                <span class="content-subtitle">Berkomitment untuk mendukung pertumbuhan berkelanjutan bagi bisnis, institusi dan masyarakan.</span>
-                <span class="content-subtitle">Berpegang pada nilai Integritas Profesionalisme, kolaborasi dan dampak jangka panjang.</span>
-              </div>
+          <div class="col-lg-6 offset-lg-1" data-aos="fade-up">
+            <div class="profile-text">
+              <span class="profile-label">Dewan Komisaris</span>
+              <h2 class="content-title">Komisaris Utama</h2>
+              <h3 class="content-subtitle">Damara Seplyan Sirya</h3>
+
+              <p class="content-subtitle">
+                Hadir sebagai penghubung yang membuka peluang, memperkuat kolaborasi,
+                dan mendorong pertumbuhan berkelanjutan bagi para mitra di berbagai sektor.
+              </p>
+              <p class="content-subtitle">
+                Berlandaskan analisis mendalam, jaringan yang luas, dan solusi yang tepat sasaran.
+              </p>
+              <p class="content-subtitle">
+                Berkomitmen mendukung pertumbuhan bisnis, institusi, dan masyarakat.
+              </p>
+              <p class="content-subtitle">
+                Menjunjung integritas, profesionalisme, kolaborasi, dan dampak jangka panjang.
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Direktur Utama -->
-    <section id="about-3" class="about-2 section green-background">
-      <div class="container">
-        <div class="content">
-          <div class="row justify-content-center">
-            <div class="col-md-5 col-lg-4 col-xl-4 order-lg-1 offset-xl-1 mb-4">
-              <div class="img-wrap text-center text-md-left" data-aos="fade-up" data-aos-delay="100">
-                <div class="img">
-                  <img src="assets/img/rahmadi.jpeg" alt="circle image" class="img-fluid">
-                </div>
-              </div>
-            </div>
-            <div class="offset-md-1 offset-lg-1 col-sm-12 col-md-5 col-lg-1 col-xl-4 mb-4" data-aos="fade-up">
-              <div class="px-3">
-                <h2 class="content-title text-start">Direktur Utama</h2>
-                <h3 class="content-subtitle">Rahmadi</h3>
-                <span class="content-subtitle">Hadir sebagai penjembatan yang menghubungkan peluang, memperkuat kolaborasi dan menciptakan pertubuhan berkelanjutan bagi para mitra kami di berbagai sektor.</span>
-                <span class="content-subtitle">Berbasis pada analisis mendalam, jaringan yang luas dan solusi yang tepat sasaran.</span>
-                <span class="content-subtitle">Berkomitment untuk mendukung pertumbuhan berkelanjutan bagi bisnis, institusi dan masyarakan.</span>
-                <span class="content-subtitle">Berpegang pada nilai Integritas Profesionalisme, kolaborasi dan dampak jangka panjang.</span>
-              </div>
-            </div>
+<!-- Komisaris -->
+<section id="about-2" class="about-2 section green-background">
+  <div class="container">
+    <div class="content">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-5">
+          <div class="img-wrap" data-aos="fade-up" data-aos-delay="100">
+            <img
+              src="assets/img/maja.jpeg"
+              alt="Maja Permata Sora, Komisaris"
+              class="img-fluid profile-image">
+          </div>
+        </div>
+
+        <div class="col-lg-6 offset-lg-1" data-aos="fade-up">
+          <div class="profile-text">
+            <span class="profile-label">Dewan Komisaris</span>
+            <h2 class="content-title">Komisaris</h2>
+            <h3 class="content-subtitle">Maja Permata Sora</h3>
+
+            <p class="content-subtitle">
+              Hadir sebagai penghubung yang membuka peluang, memperkuat kolaborasi,
+              dan mendorong pertumbuhan berkelanjutan bagi para mitra di berbagai sektor.
+            </p>
+            <p class="content-subtitle">
+              Berlandaskan analisis mendalam, jaringan yang luas, dan solusi yang tepat sasaran.
+            </p>
+            <p class="content-subtitle">
+              Berkomitmen mendukung pertumbuhan bisnis, institusi, dan masyarakat.
+            </p>
+            <p class="content-subtitle">
+              Menjunjung integritas, profesionalisme, kolaborasi, dan dampak jangka panjang.
+            </p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
+<!-- Direktur Utama -->
+<section id="about-2" class="about-2 section green-background">
+  <div class="container">
+    <div class="content">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-5">
+          <div class="img-wrap" data-aos="fade-up" data-aos-delay="100">
+            <img
+              src="assets/img/rahmadi.jpeg"
+              alt="Rahmadi, Direktur Utama"
+              class="img-fluid profile-image">
+          </div>
+        </div>
+
+        <div class="col-lg-6 offset-lg-1" data-aos="fade-up">
+          <div class="profile-text">
+            <span class="profile-label">Direksi</span>
+            <h2 class="content-title">Direktur Utama Utama</h2>
+            <h3 class="content-subtitle">Rahmadi</h3>
+
+            <p class="content-subtitle">
+              Hadir sebagai penghubung yang membuka peluang, memperkuat kolaborasi,
+              dan mendorong pertumbuhan berkelanjutan bagi para mitra di berbagai sektor.
+            </p>
+            <p class="content-subtitle">
+              Berlandaskan analisis mendalam, jaringan yang luas, dan solusi yang tepat sasaran.
+            </p>
+            <p class="content-subtitle">
+              Berkomitmen mendukung pertumbuhan bisnis, institusi, dan masyarakat.
+            </p>
+            <p class="content-subtitle">
+              Menjunjung integritas, profesionalisme, kolaborasi, dan dampak jangka panjang.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- Services Section -->
     <!-- <section id="services" class="services section green-background">
