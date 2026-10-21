@@ -2530,17 +2530,17 @@ section,
 
 #about .mission-list li {
   position: relative;
-  padding-left: 38px;
+  padding-left: 30px;
   counter-increment: mission;
 }
 
 #about .mission-list li::before {
   position: absolute;
   top: 0.1em;
-  left: 0.5em ;
+  left: 0.1em ;
   color: #8f816e;
   content: counter(mission, decimal);
-  font-size: 0.76rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 
