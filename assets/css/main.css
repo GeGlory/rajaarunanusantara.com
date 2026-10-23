@@ -2709,3 +2709,22 @@ section.about-2.green-background {
   }
 }
 
+@media (max-width: 1199px) {
+  #navmenu,
+  .mobile-nav-toggle {
+    display: none !important;
+  }
+
+  body.scrolled:not(.mobile-nav-active) .mobile-nav-toggle {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  body:not(.scrolled) .mobile-nav-toggle {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+}
+
