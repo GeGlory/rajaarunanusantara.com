@@ -19,29 +19,29 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #FAF7F5; /* Background color for the entire website, including individual sections */
-  --default-color: #212529; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #2d465e; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #34bf49; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --background-color: #f7f4ef; /* Background color for the entire website, including individual sections */
+  --default-color: #55575a; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #45484b; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #a99b88; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #a99b88; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #212529;  /* The default color of the main navmenu links */
-  --nav-hover-color: #34bf49; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #34bf49; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #4e5154;  /* The default color of the main navmenu links */
+  --nav-hover-color: #a99b88; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #fffdfa; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #fffdfa; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #4e5154; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #a99b88; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f3f4f4;
-  --surface-color: #ffffff;
+  --background-color: #a99b88;;
+  --surface-color: #a99b88;
 }
 
 /* .dark-background {
@@ -53,7 +53,7 @@
 } */
 
 .green-background {
-  --background-color: #94A094;
+  --background-color:#a99b88;
   
 }
 
@@ -2385,3 +2385,346 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
 }
+
+/* Atur ukuran fixed untuk slide */
+.custom-slide {
+  width: 700px; /* Sesuaikan lebar yang Anda inginkan */
+  height: 700px; /* Sesuaikan tinggi yang Anda inginkan */
+  overflow: hidden; /* Memastikan gambar yang meluap terpotong rapi */
+}
+
+/* Atur agar gambar memenuhi  slide tanpa distorsi */
+.slide-img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover; /* Menjaga rasio gambar agar tidak gepeng */
+  object-position: center; /* Memastikan bagian tengah gambar yang terlihat */
+}
+
+#about-2 {
+  background: radial-gradient(ellipse at 8% 12%, #a99b88, transparent 38%), linear-gradient(135deg, #AAB2AA 0%, #a99b88 100%);
+}
+
+#about-2 .content {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(28px, 5vw, 64px);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.76);
+  box-shadow: 0 20px 55px rgba(35, 55, 40, 0.15);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+#about-2 .profile-image {
+  display: block;
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 22px;
+  box-shadow: 0 12px 30px rgba(35, 55, 40, 0.18);
+}
+
+#about-2 .profile-text {
+  max-width: 560px;
+}
+
+#about-2 .profile-label {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #54705a;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+#about-2 .content-title {
+  margin-bottom: 10px;
+}
+
+#about-2 h3.content-subtitle {
+  margin-bottom: 22px;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+#about-2 p.content-subtitle {
+  margin-bottom: 12px;
+  line-height: 1.7;
+}
+
+@media (max-width: 767px) {
+  #about-2 .profile-image {
+    height: 320px;
+  }
+}
+
+#about.about-vision {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 8% 12%, #a99b88, transparent 38%),
+    linear-gradient(135deg, #AAB2AA 0%, #a99b88 100%);
+}
+
+#about .about-copy-card {
+  padding: clamp(26px, 4vw, 46px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 28px;
+  background: rgba(255, 253, 250, 0.86);
+  box-shadow: 0 22px 60px rgba(69, 72, 75, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+#about .about-eyebrow {
+  display: inline-block;
+  margin-bottom: 26px;
+  color: #8f816e;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+#about .vision-block,
+#about .mission-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+#about .vision-block h2,
+#about .mission-heading h2 {
+  margin: 3px 0 10px;
+  color: #45484b;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: 600;
+}
+
+#about .vision-block p {
+  margin: 0;
+}
+
+#about .mission-heading {
+  align-items: center;
+  margin-top: 30px;
+  padding-top: 25px;
+  border-top: 1px solid rgba(69, 72, 75, 0.14);
+}
+
+#about .mission-heading h2 {
+  margin: 0;
+}
+
+#about .mission-list {
+  display: grid;
+  gap: 13px;
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: mission;
+}
+
+#about .mission-list li {
+  position: relative;
+  padding-left: 30px;
+  counter-increment: mission;
+}
+
+#about .mission-list li::before {
+  position: absolute;
+  top: 0.1em;
+  left: 0.1em ;
+  color: #8f816e;
+  content: counter(mission, decimal);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+#about .about-section-number {
+  display: inline-flex;
+  flex: 0 0 42px;
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #8f816e;
+  color: #68716a;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+/* Slider */
+#about .about-slider {
+  position: relative;
+  overflow: hidden;
+  padding: 12px 12px 38px;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 30px;
+  background: rgba(255, 253, 250, 0.65);
+  box-shadow: 0 24px 60px rgba(69, 72, 75, 0.12);
+}
+
+#about .custom-slide {
+  width: 100%;
+  height: clamp(320px, 42vw, 540px);
+  overflow: hidden;
+  border-radius: 22px;
+}
+
+#about .slide-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Tampilkan logo utuh, tidak terpotong */
+#about .custom-slide:first-child .slide-img {
+  object-fit: contain;
+  background-color: #f7f4ef;
+}
+
+#about .about-slider-caption {
+  position: absolute;
+  right: 22px;
+  bottom: 12px;
+  left: 22px;
+  color: #626663;
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#about .swiper-pagination {
+  bottom: 44px;
+}
+
+#about .swiper-pagination-bullet {
+  background: #a99b88;
+}
+
+/* Profil pimpinan */
+section.about-2.green-background {
+  background:  #a99b88;
+}
+
+.about-2 .content {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(28px, 5vw, 64px);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 28px;
+  background: #a99b88;
+  box-shadow: 0 20px 55px rgba(69, 72, 75, 0.12);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.about-2 .profile-image {
+  display: block;
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 22px;
+  box-shadow: 0 12px 30px rgba(69, 72, 75, 0.15);
+}
+
+.about-2 .profile-label {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #8f816e;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.about-2 .content-title,
+.about-2 h3.content-subtitle {
+  color: #45484b;
+}
+
+.about-2 .content-title {
+  margin-bottom: 10px;
+}
+
+.about-2 h3.content-subtitle {
+  margin-bottom: 22px;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.about-2 p.content-subtitle {
+  margin-bottom: 12px;
+  color: #55575a;
+  line-height: 1.7;
+}
+
+/* Navbar, footer, dan tombol kembali ke atas */
+.header {
+  background-color: rgba(247, 244, 239, 0.97);
+}
+
+.footer.light-background {
+  background-color: #eeece6;
+}
+
+.footer .widget .widget-heading {
+  color: #45484b;
+}
+
+.footer a:hover {
+  color: #8f816e !important;
+}
+
+.scroll-top {
+  background-color: #77786f;
+  border-radius: 50%;
+}
+
+.scroll-top:hover {
+  background-color: #a99b88;
+}
+
+@media (max-width: 767px) {
+  #about .about-copy-card,
+  .about-2 .content {
+    border-radius: 22px;
+  }
+
+  #about .custom-slide {
+    height: 340px;
+  }
+
+  .about-2 .profile-image {
+    height: 320px;
+  }
+}
+
+@media (max-width: 1199px) {
+  #navmenu,
+  .mobile-nav-toggle {
+    display: none !important;
+  }
+
+  body.scrolled:not(.mobile-nav-active) .mobile-nav-toggle {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  body:not(.scrolled) .mobile-nav-toggle {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+}
+
